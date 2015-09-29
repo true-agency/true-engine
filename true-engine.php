@@ -15,6 +15,6 @@ $loader->register();
  */
 add_filter('themosis_register_bindings', function ($app)
 {
-	$app->register('\Trueper\Helpers\LibIgniterService');
-	$app->alias('true.lib', '\Trueper\Helpers\Lib');
+    $ignite = new \Trueper\Core\Ignite($app);
+    $ignite->boot();
 });

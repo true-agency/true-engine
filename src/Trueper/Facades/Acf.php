@@ -3,7 +3,7 @@ namespace Trueper\Facades;
 
 use Themosis\Facades\Facade;
 
-class Lib extends Facade{
+class Acf extends Facade{
 
     /**
      * Return the igniter service key responsible for the form class.
@@ -14,7 +14,7 @@ class Lib extends Facade{
      */
     protected static function getFacadeAccessor()
     {
-        return 'helpers.lib';
+        return 'helpers.acf';
     }
 
 } 
